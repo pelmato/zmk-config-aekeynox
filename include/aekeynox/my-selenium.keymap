@@ -13,6 +13,21 @@
 #include "mappings.dtsi"  // key mapping helpers and macros
 #include "hold_taps.dtsi" // defines thumb keys and homerow mods
 
+#undef LTHUMB_HOME
+#define LTHUMB_HOME &lt NAV_NUM_LAYER SPACE
+
+#undef LTHUMB_TUCK
+#define LTHUMB_TUCK &mt LSHIFT BACKSPACE
+
+#undef RTHUMB_TUCK
+#define RTHUMB_TUCK &lt SYMBOLS_LAYER ENTER
+
+#undef LTHUMB_REACH
+#define LTHUMB_REACH &sc FN_MEDIA_LAYER SPACE
+
+#undef RTHUMB_REACH
+#define RTHUMB_REACH &sc FN_MEDIA_LAYER SPACE
+
 /**
  * All keyboard layers are defined by blocks on a 42-key basis, as follows:
  *
